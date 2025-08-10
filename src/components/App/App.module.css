@@ -4,40 +4,63 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  min-height: 100vh; /* Make the body at least the height of the viewport */
+  margin: 0;        /* This is crucial to remove the default browser margin */
+  padding: 0; 
 }
 
 .appHeader {
-  width: 100%;
+  width: 80%;
+  height: 2em;
+  margin: auto;
   text-align: center;
   color: whitesmoke;
   font-size: x-large;
 }
 
 .searchBar {
-  width: 100%;
+  width: 60%;
+  margin: auto;
   justify-items: center;
 }
 
 .dashboard {
   display:flex;
+  flex-direction: row;
   width: 80%;
   margin: auto;
   justify-content: space-around;
   align-items: center;
-  background-color: peachpuff;
 }
 
+.playlist, .searchResults {
+  width: 45%;
+  margin: auto;
+  background-color: rgb(255, 255, 255,0.5);
+  border: 6px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  
+}
+
+.tracklistHead {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: large;
+}
 .tracklist {
-  background-color: grey;
-  width: 40%;
+  display: flex;
+  flex-direction: row;
   justify-items: center;
   justify-content: center;
-  max-height: 600px;
+  max-height: 50vh;
   overflow:auto;
 }
 
 .tracklist::-webkit-scrollbar {
-  width: 16px; /* width of the entire scrollbar */
+  width: 6px; /* width of the entire scrollbar */
 }
 
 .tracklist::-webkit-scrollbar-track {
@@ -47,6 +70,40 @@
 .tracklist::-webkit-scrollbar-thumb {
   background-color: purple; /* color of the scrollbar thumb */
   border-radius: 10px;
-  border: 3px solid #f1f1f1; /* creates padding around the thumb */
+  border: 3px solid purple; /* creates padding around the thumb */
+}
+
+.saveToSpotify {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.btnSaveToSpotify {
+  padding: 15px 50px;
+  background-color: whitesmoke;
+  font-size: larger;
+  font-weight: bold;
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 30px;
+  border: 0px;
+  border-bottom: 5px solid grey;
+  border-right: 5px solid grey;
+}
+
+.btnSaveToSpotify:hover {
+  background-color: chartreuse;
+  transform: scale(1.1);
+  transition-duration: 200ms;
+  border-bottom: 5px solid green;
+  border-right: 5px solid green;
+}
+
+.footer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
 }
 
