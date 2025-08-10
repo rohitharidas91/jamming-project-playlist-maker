@@ -1,0 +1,37 @@
+.trackCard {
+    height: 64px;
+    padding: 5px;
+    margin: 5px;
+    width: 85%;
+    background-color: black;
+    color: white;
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: left;
+}
+
+.trackCard:hover {
+    transform: scale(1.1);
+}
+
+
+.albumArt {
+    height: 64px;
+    width: 64px;
+}
+
+.songDetails {
+    display: flex;
+    width: 72%;
+    flex-direction: column;
+    margin-left: 1em;
+    justify-content:space-evenly;
+}
+
+.trackButton {
+    height: 64px;
+    width: 64px;
+    border: 2px solid white;
+    border-radius: 32px;
+    font-size: 24px;
+}
