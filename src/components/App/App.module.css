@@ -10,18 +10,10 @@
 }
 
 .appHeader {
-  width: 80%;
-  height: 2em;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   color: whitesmoke;
-  font-size: x-large;
-}
-
-.searchBar {
-  width: 60%;
-  margin: auto;
-  justify-items: center;
+  font-size: 1.5em;
 }
 
 .dashboard {
@@ -31,46 +23,6 @@
   margin: auto;
   justify-content: space-around;
   align-items: center;
-}
-
-.playlist, .searchResults {
-  width: 45%;
-  margin: auto;
-  background-color: rgb(255, 255, 255,0.5);
-  border: 6px solid black;
-  border-radius: 20px;
-  padding: 15px;
-  
-}
-
-.tracklistHead {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  text-align: center;
-  font-size: large;
-}
-.tracklist {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  justify-content: center;
-  max-height: 50vh;
-  overflow:auto;
-}
-
-.tracklist::-webkit-scrollbar {
-  width: 6px; /* width of the entire scrollbar */
-}
-
-.tracklist::-webkit-scrollbar-track {
-  background: pink; /* color of the scrollbar track */
-}
-
-.tracklist::-webkit-scrollbar-thumb {
-  background-color: purple; /* color of the scrollbar thumb */
-  border-radius: 10px;
-  border: 3px solid purple; /* creates padding around the thumb */
 }
 
 .saveToSpotify {
@@ -104,6 +56,5 @@
   margin: auto;
   display: flex;
   justify-content: center;
-
 }
 

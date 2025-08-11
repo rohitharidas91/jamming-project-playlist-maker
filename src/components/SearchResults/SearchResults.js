@@ -5,7 +5,8 @@ import Tracklist from '../Tracklist/Tracklist';
 function SearchResults() {
     
     return (
-        <div className={styles.results}>
+        <div className={styles.container}>
+            <h2 className={styles.tracklistHead}>Search Results</h2>
             <Tracklist />
         </div>
     )

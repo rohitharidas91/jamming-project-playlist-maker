@@ -4,7 +4,8 @@ import Tracklist from '../Tracklist/Tracklist';
 
 function Playlist() {
     return (
-        <div className={styles.playlist}>
+        <div className={styles.container}>
+          <h2 className={styles.tracklistHead}>Playlist</h2>
           <Tracklist />
         </div>
             

@@ -12,33 +12,16 @@ function App() {
   return (
     <div className={styles.app}>
         <header className={styles.appHeader}>
-          <h1>Music Jammer</h1>
+          <h1>Music Jammmer</h1>
         </header>  
 
-        <div className={styles.searchBar}>
-          <SearchBar query={query} setQuery={setQuery} />
-        </div>
+        <SearchBar query={query} setQuery={setQuery} />
 
         <div className={styles.dashboard}>
-          <div className={styles.searchResults}>
-            <div className={styles.tracklistHead}>
-              <h2>Results</h2>
-            </div>
-
-            <div className={styles.tracklist}>
-              <SearchResults />
-            </div>
-          </div>
-
-          <div className={styles.playlist}>
-            <div className={styles.tracklistHead}>
-              <h2>Playlist</h2> 
-            </div>
-            <div className={styles.tracklist}>
-              <Playlist />
-            </div>
-          </div>
+            <SearchResults />
+            <Playlist />
         </div>
+
         <div className={styles.saveToSpotify}>
           <button className={styles.btnSaveToSpotify}>Save to Spotify</button>
         </div>

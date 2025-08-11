@@ -1,0 +1,20 @@
+.trackList {
+    max-height: 50vh;
+    overflow-y:auto;
+    margin: auto;
+}
+  
+.trackList::-webkit-scrollbar {
+    width: 6px; /* width of the entire scrollbar */
+}
+
+.trackList::-webkit-scrollbar-track {
+    background: pink; /* color of the scrollbar track */
+    border-radius: 10px;
+}
+
+.trackList::-webkit-scrollbar-thumb {
+    background-color: purple; /* color of the scrollbar thumb */
+    border-radius: 10px;
+    border: 3px solid purple; /* creates padding around the thumb */
+}
