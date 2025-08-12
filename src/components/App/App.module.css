@@ -25,6 +25,13 @@
   align-items: center;
 }
 
+@media (max-width: 768px) , (orientation: portrait) {
+  .dashboard {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 .saveToSpotify {
   display: flex;
   margin: auto;

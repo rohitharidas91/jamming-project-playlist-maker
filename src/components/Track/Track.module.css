@@ -23,13 +23,20 @@
     justify-content:space-evenly;
 }
 
+.buttonContainer {
+    display: flex;
+    align-content: center;
+    justify-content:space-evenly;
+    width: 15%;
+}
+
 .trackButton {
-    height: 64px;
-    width: 64px;
-    border: 2px solid white;
-    border-radius: 32px;
-    box-shadow: ;
-    font-size: 24px;
+    margin: auto;
+    height: 48px;
+    width: 48px;
+    border: 2px solid purple;
+    border-radius: 50%;
+    font-size: auto;
     transition: transform 0.2s ease-in-out;    
 }
 
@@ -37,3 +44,9 @@
     transform: scale(1.1);
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
+
+@media (max-width: 768px) , (orientation: portrait) {
+    .albumArt {
+      display: none;
+    }
+  }
