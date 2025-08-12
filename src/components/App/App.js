@@ -25,7 +25,7 @@ function App() {
     }]);
 
   //Name of the playlist
-  const [playlistName, setPlaylistName] = useState('Playlist Name...');
+  const [playlistName, setPlaylistName] = useState('');
 
   // Playlist Array of Track objects
   const [playlistTracks, setPlaylistTracks] = useState ([
@@ -58,7 +58,10 @@ function App() {
     } else {
       setPlaylistTracks(newTracks);
     }
+  }
 
+  function savePlaylist() {
+    alert(playlistName);
   }
 
   function removeTrack(trackToRemove) {
@@ -78,11 +81,11 @@ function App() {
 
         <div className={styles.dashboard}>
             <SearchResults userSearchResults={searchResults} onAdd={addTrack}/>
-            <Playlist playlistName={playlistName} playlistTracks={playlistTracks} onRemove={removeTrack}/>
+            <Playlist playlistName={playlistName} setPlaylistName={setPlaylistName} playlistTracks={playlistTracks} onRemove={removeTrack}/>
         </div>
 
         <div className={styles.saveToSpotify}>
-          <button className={styles.btnSaveToSpotify}>Save to Spotify</button>
+          <button className={styles.btnSaveToSpotify} onClick={savePlaylist}>Save to Spotify</button>
         </div>
         
         <footer className={styles.footer}>
